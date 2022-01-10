@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@alch/alchemy-web3": "^1.1.9",
     "@openzeppelin/contracts": "^4.4.1",
     "dotenv": "^10.0.0",
     "truffle-hdwallet-provider": "^1.0.17",
