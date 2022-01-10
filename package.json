@@ -1,0 +1,14 @@
+{
+  "name": "blockchain-ethereum-template",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.1",
+    "dotenv": "^10.0.0",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.6.1"
+  },
+  "devDependencies": {
+    "ganache-cli": "^6.12.2"
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "openZeppelin": {
+    "assets": [
+      {
+        "id": "erc721",
+        "name": "token/ERC721/ERC721.sol",
+        "hash": "67742b84251041fe12d7eeaaac4838b83c31325a",
+        "type": "contract",
+        "dependencies": [
+          "context",
+          "ierc721",
+          "ierc721receiver",
+          "safemath",
+          "address",
+          "counters",
+          "erc165"
+        ]
+      },
+      {
+        "id": "context",
+        "name": "GSN/Context.sol",
+        "hash": "107729583750206885773cee54febb5a1d73fd0e",
+        "type": "abstractContract"
+      },
+      {
+        "id": "ierc721",
+        "name": "token/ERC721/IERC721.sol",
+        "hash": "b8efac2316fbc713377b72ffa47c8e038b24f755",
+        "type": "abstractContract",
+        "dependencies": [
+          "ierc165"
+        ]
+      },
+      {
+        "id": "ierc165",
+        "name": "introspection/IERC165.sol",
+        "hash": "07c6fac5f2713815d9056c95ac5fc38dccacd2f5",
+        "type": "interface"
+      },
+      {
+        "id": "ierc721receiver",
+        "name": "token/ERC721/IERC721Receiver.sol",
+        "hash": "94eeb75cfec5e65327cd785d7d174a8418b1ffad",
+        "type": "abstractContract"
+      },
+      {
+        "id": "safemath",
+        "name": "math/SafeMath.sol",
+        "hash": "e7091fb2265a588ca7cd6557fdd92a4823f3f157",
+        "type": "library"
+      },
+      {
+        "id": "address",
+        "name": "utils/Address.sol",
+        "hash": "3dc496d40215f923d029aafb79f05c7a5a33f233",
+        "type": "library"
+      },
+      {
+        "id": "counters",
+        "name": "drafts/Counters.sol",
+        "hash": "15ecb775f15a851ac0dd603f33f7028b857cf929",
+        "type": "library",
+        "dependencies": [
+          "safemath"
+        ]
+      },
+      {
+        "id": "erc165",
+        "name": "introspection/ERC165.sol",
+        "hash": "86e7c9ae4202162f1eeedeff2e71826b19d1c34b",
+        "type": "abstractContract",
+        "dependencies": [
+          "ierc165"
+        ]
+      },
+      {
+        "id": "erc721burnable",
+        "name": "token/ERC721/ERC721Burnable.sol",
+        "hash": "e35796b9ecdcceb5a5afbd42090a82355a3a7ac9",
+        "type": "contract",
+        "dependencies": [
+          "context",
+          "erc721"
+        ]
+      },
+      {
+        "id": "erc721enumerable",
+        "name": "token/ERC721/ERC721Enumerable.sol",
+        "hash": "ff7a15843166646a6e91802ea8d957f184382b1d",
+        "type": "contract",
+        "dependencies": [
+          "context",
+          "ierc721enumerable",
+          "erc721",
+          "erc165"
+        ]
+      },
+      {
+        "id": "ierc721enumerable",
+        "name": "token/ERC721/IERC721Enumerable.sol",
+        "hash": "4c1dfb564a11820ec63b890aaf45a1ab349bd72e",
+        "type": "abstractContract",
+        "dependencies": [
+          "ierc721"
+        ]
+      },
+      {
+        "id": "erc721full",
+        "name": "token/ERC721/ERC721Full.sol",
+        "hash": "a6fce2734bc686dd8e20da46fbc593350e36db3a",
+        "type": "contract",
+        "dependencies": [
+          "erc721",
+          "erc721enumerable",
+          "erc721metadata"
+        ],
+        "requiredParameters": {
+          "ERC721Full": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "symbol",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      {
+        "id": "erc721metadata",
+        "name": "token/ERC721/ERC721Metadata.sol",
+        "hash": "c83b5e16f67e8652d8a16e938f1e3c7a6b48c326",
+        "type": "contract",
+        "dependencies": [
+          "context",
+          "erc721",
+          "ierc721metadata",
+          "erc165"
+        ],
+        "requiredParameters": {
+          "ERC721Metadata": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "symbol",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ierc721metadata",
+        "name": "token/ERC721/IERC721Metadata.sol",
+        "hash": "05835aff87f27c8b3195eac2b9d06d3ed0c5489e",
+        "type": "abstractContract",
+        "dependencies": [
+          "ierc721"
+        ]
+      },
+      {
+        "id": "erc721holder",
+        "name": "token/ERC721/ERC721Holder.sol",
+        "hash": "bcc10d7e225495d51f897f31254cc128dde58669",
+        "type": "contract",
+        "dependencies": [
+          "ierc721receiver"
+        ]
+      },
+      {
+        "id": "erc721metadatamintable",
+        "name": "token/ERC721/ERC721MetadataMintable.sol",
+        "hash": "a1421d1dd64d3c2b5546e5f710350fc708439af6",
+        "type": "abstractContract",
+        "dependencies": [
+          "erc721metadata",
+          "minterrole"
+        ]
+      },
+      {
+        "id": "minterrole",
+        "name": "access/roles/MinterRole.sol",
+        "hash": "f881e3a739890aea9e22b5750002e742cf6c74de",
+        "type": "abstractContract",
+        "dependencies": [
+          "context",
+          "roles"
+        ]
+      },
+      {
+        "id": "roles",
+        "name": "access/Roles.sol",
+        "hash": "5f3eff6aeede298f88aa400967d75f993b2c7e56",
+        "type": "library"
+      },
+      {
+        "id": "erc721mintable",
+        "name": "token/ERC721/ERC721Mintable.sol",
+        "hash": "faed7ad853ad1e8abdd45a2c981da5e0651e9a09",
+        "type": "contract",
+        "dependencies": [
+          "erc721",
+          "minterrole"
+        ]
+      },
+      {
+        "id": "erc721pausable",
+        "name": "token/ERC721/ERC721Pausable.sol",
+        "hash": "5080d38085d7bf436f0d012f32cba1817f87c91b",
+        "type": "contract",
+        "dependencies": [
+          "erc721",
+          "pausable"
+        ]
+      },
+      {
+        "id": "pausable",
+        "name": "lifecycle/Pausable.sol",
+        "hash": "77d11e33b6c906b9b0a09a43004859b8711f6ef3",
+        "type": "abstractContract",
+        "dependencies": [
+          "context",
+          "pauserrole"
+        ]
+      },
+      {
+        "id": "pauserrole",
+        "name": "access/roles/PauserRole.sol",
+        "hash": "6ad238402b4fe6f14d065a94880650a75a7012be",
+        "type": "abstractContract",
+        "dependencies": [
+          "context",
+          "roles"
+        ]
+      },
+      {
+        "id": "ierc721full",
+        "name": "token/ERC721/IERC721Full.sol",
+        "hash": "e543aefeb38ae89d3cad665e81a89ab9d4d59dac",
+        "type": "abstractContract",
+        "dependencies": [
+          "ierc721",
+          "ierc721enumerable",
+          "ierc721metadata"
+        ]
+      }
+    ],
+    "version": "2.5.0",
+    "categories": [
+      "token/ERC721"
+    ]
+  }
+}
